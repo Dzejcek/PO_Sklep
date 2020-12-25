@@ -1,0 +1,14 @@
+.nav-wraper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+
+button {
+    height: 40px;
+    width: 80px;
+    background-color: yellow;
+}
