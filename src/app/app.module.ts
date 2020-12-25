@@ -10,11 +10,23 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule} from '@angular/common/http'
 import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { BasketComponent } from './basket/basket.component';
+import { BrowseProductsComponent } from './browse-products/browse-products.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
+import {MatStepperModule} from '@angular/material/stepper';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    BasketComponent,
+    BrowseProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +36,16 @@ import {MatMenuModule} from '@angular/material/menu';
     MatSidenavModule,
     MatIconModule,
     HttpClientModule,
-    MatMenuModule
+    MatMenuModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatPaginatorModule,
+    MatInputModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
