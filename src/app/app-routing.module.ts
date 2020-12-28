@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BasketComponent } from './basket/basket.component';
 import { BrowseProductsComponent } from './browse-products/browse-products.component';
+import { SubmitOrderComponent } from './submit-order/submit-order.component';
 
 const routes: Routes = [
 {path: "offer", component: BrowseProductsComponent},
-{path: "basket", component: BasketComponent}
+{path: "basket", component: SubmitOrderComponent}
 ];
 
 @NgModule({

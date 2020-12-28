@@ -2,7 +2,13 @@
     <mat-label>Filter</mat-label>
     <input matInput matForm  placeholder="Ex. ium" #input>
   </mat-form-field>
-<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 80%; margin-left: 10%; margin-top: 5%;">
+
+  <mat-tab-group style="width: 80%; margin-left: 10%; margin-top: 5%;">
+    <mat-tab label="Pralki"> </mat-tab>
+    <mat-tab label="Zmywarki">  </mat-tab>
+    <mat-tab label="Piekarniki">  </mat-tab>
+  </mat-tab-group>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 80%; margin-left: 10%; margin-top: 10px;">
 
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef> Name </th>

@@ -20,13 +20,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatStepperModule} from '@angular/material/stepper';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SubmitOrderComponent } from './submit-order/submit-order.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     BasketComponent,
-    BrowseProductsComponent
+    BrowseProductsComponent,
+    SubmitOrderComponent
   ],
   imports: [
     BrowserModule,
