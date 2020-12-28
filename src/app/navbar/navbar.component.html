@@ -1,19 +1,15 @@
-<!--#3f51b5;-->
-<mat-toolbar style="background-color: black">
-  <span style="color: white; font-size: larger; font-family: 'Anton', sans-serif;">Wszystko dla domu</span>
-  <button mat-button [matMenuTriggerFor]="belowMenu">Oferta</button>
+
+<nav mat-tab-nav-bar style="background-color: black;">
+  <h1 style="color: white;">Wszystko dla domu</h1>
+  <a mat-tab-link [matMenuTriggerFor]="belowMenu">Oferta</a>
+  <a mat-tab-link routerLink = "/basket">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: brown;">shopping_cart</mat-icon>
+    Koszyk
+  </a>
   <mat-menu #belowMenu="matMenu" style="background-color: #3f51b5;">
     <button routerLink = "/offer" mat-menu-item style="background-color: white; color: black;">Duże AGD</button>
     <button mat-menu-item style="background-color: white; color: black;">Małe AGD</button>
    </mat-menu>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with heart icon">
-    Konto
-  </button>
-  <button routerLink = "/basket" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: brown;">shopping_cart</mat-icon>
-    Koszyk
-  </button>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    Regulamin
-  </button>
-</mat-toolbar>
+  <a mat-tab-link >Konto</a>
+  <a mat-tab-link >Regulamin</a>
+</nav>

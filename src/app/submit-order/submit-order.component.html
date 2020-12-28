@@ -1,0 +1,18 @@
+<mat-horizontal-stepper  #stepper>
+    <mat-step >
+        <ng-template matStepLabel>Zawartość koszyka</ng-template>
+        <app-basket></app-basket>
+    </mat-step>
+    <mat-step >
+        <ng-template matStepLabel>Płatność</ng-template>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Twoje dane</ng-template>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Dostawa</ng-template>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Podsumowanie</ng-template>
+      </mat-step>
+  </mat-horizontal-stepper>
