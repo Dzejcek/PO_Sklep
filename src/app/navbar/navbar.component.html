@@ -1,15 +1,45 @@
 
-<nav mat-tab-nav-bar style="background-color: black;">
-  <h1 style="color: white;">Wszystko dla domu</h1>
-  <a mat-tab-link [matMenuTriggerFor]="belowMenu">Oferta</a>
+<nav mat-tab-nav-bar style="background-color: black; height: 10vh; align-items: center;">
+  <h1 style="color: red; margin-left: 20px; margin-right: auto; font-weight: 200; font-family: 'Bangers', cursive;">Wszystko dla domu</h1>
+<a mat-tab-link>
+  Oferta
+    <mat-select>
+      <mat-optgroup label="Duże AGD">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'pralki'}" routerLinkActive="active">
+        Pralki
+      </mat-option>
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'zmywarki'}" routerLinkActive="active">
+        Zmywarki
+      </mat-option>
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'lodowki'}" routerLinkActive="active">
+        Lodówki
+      </mat-option>
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'piekarniki'}" routerLinkActive="active">
+        Piekarniki
+      </mat-option>
+    </mat-optgroup>
+    <mat-optgroup label="Małe AGD">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'odkurzacze'}" routerLinkActive="active">
+        Odkurzacze
+      </mat-option>
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'zelazka'}" routerLinkActive="active">
+        Żelazka
+      </mat-option>
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'czajniki'}" routerLinkActive="active">
+        Czajniki
+      </mat-option>
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'tostery'}" routerLinkActive="active">
+        Tostery
+      </mat-option>
+    </mat-optgroup>
+    </mat-select>
+
+  </a>
+
   <a mat-tab-link routerLink = "/basket">
-    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: brown;">shopping_cart</mat-icon>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: red;">shopping_cart</mat-icon>
     Koszyk
   </a>
-  <mat-menu #belowMenu="matMenu" style="background-color: #3f51b5;">
-    <button routerLink = "/offer" mat-menu-item style="background-color: white; color: black;">Duże AGD</button>
-    <button mat-menu-item style="background-color: white; color: black;">Małe AGD</button>
-   </mat-menu>
   <a mat-tab-link >Konto</a>
   <a mat-tab-link >Regulamin</a>
 </nav>

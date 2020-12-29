@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Product } from '../objects/Product';
 
 const  productList: Array<Product> = [{title: "TV 1500", price: 1000}, {title: "TV 1700", price: 1500}];
@@ -11,10 +12,12 @@ const  productList: Array<Product> = [{title: "TV 1500", price: 1000}, {title: "
 export class BrowseProductsComponent implements OnInit {
   displayedColumns = ['title', 'price'];
   dataSource = productList;
+  categoryName = '';
  
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
   
   ngOnInit(): void {
+    this.route.queryParams.subscribe(param => this.categoryName = param.category);
   }
 
 }
