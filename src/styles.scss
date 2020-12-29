@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-tab-link{
@@ -13,3 +13,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-tab-label-content{
     color: black;
 }
+<<<<<<< HEAD
+=======
+
+.mat-step-icon-selected{
+    background-color: rgb(129, 34, 34) !important;
+}
+.mat-step-icon-state-edit{
+    background-color: rgb(129, 34, 34) !important;
+}
+   
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: white !important;
+}
+::ng-deep.mat-form-field-underline {
+    background-color:  rgb(255, 230, 0) !important;
+}
+>>>>>>> remotes/origin/masterSklep
