@@ -22,14 +22,16 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SubmitOrderComponent } from './submit-order/submit-order.component';
 import {MatSelectModule} from '@angular/material/select';
-
+import {MatButtonModule} from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     BasketComponent,
     BrowseProductsComponent,
-    SubmitOrderComponent
+    SubmitOrderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatStepperModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
 
   ],
   providers: [],
