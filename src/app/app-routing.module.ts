@@ -4,7 +4,7 @@ import { BrowseProductsComponent } from './browse-products/browse-products.compo
 import { SubmitOrderComponent } from './submit-order/submit-order.component';
 
 const routes: Routes = [
-{path: "offer", component: BrowseProductsComponent},
+{path: 'offer', component: BrowseProductsComponent},
 {path: "basket", component: SubmitOrderComponent}
 ];
 
