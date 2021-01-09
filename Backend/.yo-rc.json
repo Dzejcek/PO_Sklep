@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sklepagd"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "Backend",
+    "packageName": "com.sklepagd",
+    "packageFolder": "com/sklepagd",
+    "serverPort": "9999",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTViNDJjM2YwODZhMDdhNTcwNjVmM2Q1Y2RmZmZjMjlmM2E4ZjZkNGIxYjVlOTVhNzQ3NzViZWUwNDhkOGZiYzU1ZjE4MWJmNmY1OTM1NjViYTNmY2JmYTliOWI5MDliOTI1ZjdhYzg2NWZmYzY3YzQ1NmFhMTdjZDRmN2Y4YmQ=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1610219199201,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
