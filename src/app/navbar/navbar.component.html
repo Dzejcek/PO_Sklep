@@ -1,45 +1,39 @@
 
-<nav mat-tab-nav-bar style="background-color: black; height: 10vh; align-items: center;">
-<<<<<<< HEAD
-  <h1 style="color: red; margin-left: 20px; margin-right: auto; font-weight: 200; font-family: 'Bangers', cursive;">Wszystko dla domu</h1>
-=======
+<nav mat-tab-nav-bar style="position: sticky;  top: 0; z-index: 5; background-color: black; height: 10vh; align-items: center;">
   <h1 style="color: rgb(255, 255, 255); margin-left: 20px; margin-right: auto; font-weight: 200; font-family: 'Bangers', cursive;">Wszystko dla domu</h1>
->>>>>>> remotes/origin/masterSklep
 <a mat-tab-link>
   Oferta
     <mat-select>
       <mat-optgroup label="Duże AGD">
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'pralki'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'pralki'}">
         Pralki
       </mat-option>
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'zmywarki'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'zmywarki'}">
         Zmywarki
       </mat-option>
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'lodowki'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'lodówki'}">
         Lodówki
       </mat-option>
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'piekarniki'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'piekarniki'}" >
         Piekarniki
       </mat-option>
     </mat-optgroup>
     <mat-optgroup label="Małe AGD">
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'odkurzacze'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'odkurzacze'}">
         Odkurzacze
       </mat-option>
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'zelazka'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'żelazka'}">
         Żelazka
       </mat-option>
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'czajniki'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'czajniki'}">
         Czajniki
       </mat-option>
-      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'tostery'}" routerLinkActive="active">
+      <mat-option [routerLink] = "['/offer']" [queryParams]="{ category: 'tostery'}">
         Tostery
       </mat-option>
     </mat-optgroup>
     </mat-select>
-
   </a>
-
   <a mat-tab-link routerLink = "/basket">
     <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: red;">shopping_cart</mat-icon>
     Koszyk

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,24 +21,16 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SubmitOrderComponent } from './submit-order/submit-order.component';
 import {MatSelectModule} from '@angular/material/select';
-<<<<<<< HEAD
-
-=======
 import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
->>>>>>> remotes/origin/masterSklep
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     BasketComponent,
     BrowseProductsComponent,
-<<<<<<< HEAD
-    SubmitOrderComponent
-=======
     SubmitOrderComponent,
     FooterComponent
->>>>>>> remotes/origin/masterSklep
   ],
   imports: [
     BrowserModule,
@@ -58,12 +49,8 @@ import { FooterComponent } from './footer/footer.component';
     MatStepperModule,
     FormsModule,
     ReactiveFormsModule,
-<<<<<<< HEAD
-    MatSelectModule
-=======
     MatSelectModule,
     MatButtonModule
->>>>>>> remotes/origin/masterSklep
 
   ],
   providers: [],
