@@ -26,14 +26,384 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ed0c65-635c-4732-b98b-91c246707820" name="Default Changelist" comment="Divide Project 2 folders Front and Back" />
+    <list default="true" id="e7ed0c65-635c-4732-b98b-91c246707820" name="Default Changelist" comment="Adding backend">
+      <change afterPath="$PROJECT_DIR$/.idea/SklepAGD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Dostawa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Koszyk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Platnosc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Produkt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/ProduktKoszyk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Raport.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Reklamacja.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/Zamowienie.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/.jhipster/ZamowienieRaport.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/auth.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/ents.jdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/produkt.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Dostawa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Koszyk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Platnosc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Produkt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/ProduktKoszyk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Raport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Reklamacja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/Zamowienie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/domain/ZamowienieRaport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/DostawaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/KoszykRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/PlatnoscRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/ProduktKoszykRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/ProduktRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/RaportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/ReklamacjaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/ZamowienieRaportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/repository/ZamowienieRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/service/dto/ProduktInKoszykDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/DostawaResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/KoszykResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/PlatnoscResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/ProduktKoszykResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/ProduktResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/RaportResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/ReklamacjaResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/ZamowienieRaportResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/web/rest/ZamowienieResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194130_added_entity_Reklamacja.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194130_added_entity_constraints_Reklamacja.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194230_added_entity_Zamowienie.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194230_added_entity_constraints_Zamowienie.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194330_added_entity_Platnosc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194330_added_entity_constraints_Platnosc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194430_added_entity_Dostawa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194430_added_entity_constraints_Dostawa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194530_added_entity_Raport.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194630_added_entity_Koszyk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194630_added_entity_constraints_Koszyk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194730_added_entity_ProduktKoszyk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194730_added_entity_constraints_ProduktKoszyk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194830_added_entity_Produkt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194930_added_entity_ZamowienieRaport.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/changelog/20210109194930_added_entity_constraints_ZamowienieRaport.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/dostawa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/koszyk.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/platnosc.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/produkt.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/produkt_koszyk.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/raport.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/reklamacja.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/zamowienie.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/fake-data/zamowienie_raport.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/dostawa/dostawa.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/koszyk/koszyk.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/platnosc/platnosc.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt-koszyk/produkt-koszyk.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/produkt/produkt.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/raport/raport.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/reklamacja/reklamacja.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie-raport/zamowienie-raport.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie-delete-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie-delete-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie-update.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie-update.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie.route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/zamowienie/zamowienie.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/dostawa.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/koszyk.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/platnosc.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/produkt-koszyk.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/produkt.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/raport.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/reklamacja.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/zamowienie-raport.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/shared/model/zamowienie.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/DostawaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/KoszykTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/PlatnoscTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/ProduktKoszykTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/ProduktTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/RaportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/ReklamacjaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/ZamowienieRaportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/domain/ZamowienieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/DostawaResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/KoszykResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/PlatnoscResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/ProduktKoszykResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/ProduktResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/RaportResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/ReklamacjaResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/ZamowienieRaportResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/java/com/backendsklepagd/web/rest/ZamowienieResourceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/dostawa/dostawa.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/dostawa/dostawa.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/koszyk/koszyk.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/koszyk/koszyk.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/platnosc/platnosc.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/platnosc/platnosc.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/produkt-koszyk/produkt-koszyk.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/produkt-koszyk/produkt-koszyk.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/produkt/produkt.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/produkt/produkt.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/raport/raport.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/raport/raport.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/reklamacja/reklamacja.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/reklamacja/reklamacja.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/zamowienie-raport/zamowienie-raport.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/zamowienie-raport/zamowienie-raport.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/zamowienie/zamowienie.page-object.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/e2e/entities/zamowienie/zamowienie.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/dostawa/dostawa-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/dostawa/dostawa-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/dostawa/dostawa-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/dostawa/dostawa.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/dostawa/dostawa.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/koszyk/koszyk-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/koszyk/koszyk-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/koszyk/koszyk-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/koszyk/koszyk.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/koszyk/koszyk.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/platnosc/platnosc-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/platnosc/platnosc-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/platnosc/platnosc-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/platnosc/platnosc.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/platnosc/platnosc.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt-koszyk/produkt-koszyk-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt-koszyk/produkt-koszyk-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt-koszyk/produkt-koszyk-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt-koszyk/produkt-koszyk.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt-koszyk/produkt-koszyk.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt/produkt-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt/produkt-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt/produkt-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt/produkt.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/produkt/produkt.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/raport/raport-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/raport/raport-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/raport/raport-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/raport/raport.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/raport/raport.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/reklamacja/reklamacja-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/reklamacja/reklamacja-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/reklamacja/reklamacja-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/reklamacja/reklamacja.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/reklamacja/reklamacja.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie-raport/zamowienie-raport-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie-raport/zamowienie-raport-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie-raport/zamowienie-raport-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie-raport/zamowienie-raport.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie-raport/zamowienie-raport.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie/zamowienie-delete-dialog.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie/zamowienie-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie/zamowienie-update.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie/zamowienie.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackendSklepAGD/src/test/javascript/spec/app/entities/zamowienie/zamowienie.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.huskyrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.lintstagedrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/.yo-rc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/checkstyle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/sonar-project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/app.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/central-server-config/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/central-server-config/docker-config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/central-server-config/localhost-config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/grafana/provisioning/dashboards/JVM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/grafana/provisioning/dashboards/dashboard.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/grafana/provisioning/datasources/datasource.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/hazelcast-management-center.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/jhipster-registry.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/monitoring.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/mysql.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/prometheus/prometheus.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/docker/sonar.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/ApplicationWebXml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/BackendApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/aop/logging/LoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/client/UserFeignClientInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/ApplicationProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/AsyncConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/CacheConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/CloudDatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/DatabaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/DateTimeFormatConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/FeignConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/JacksonConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/LiquibaseConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/LocaleConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/LoggingAspectConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/LoggingConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/WebConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/audit/AuditEventConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/audit/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/config/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/domain/AbstractAuditingEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/domain/PersistentAuditEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/domain/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/AuthoritiesConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/SecurityUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/SpringSecurityAuditorAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/jwt/JWTConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/jwt/JWTFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/jwt/TokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/security/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/errors/BadRequestAlertException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/errors/ErrorConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/errors/ExceptionTranslator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/errors/FieldErrorVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/errors/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/sklepagd/web/rest/vm/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/jib/entrypoint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/.h2.server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/application-tls.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/bootstrap-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/liquibase/changelog/00000000000000_initial_schema.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/liquibase/master.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/config/tls/keystore.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/i18n/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/logback-spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/ArchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/config/WebConfigurerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/config/WebConfigurerTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/config/timezone/HibernateTimeZoneIT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/repository/timezone/DateTimeWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/repository/timezone/DateTimeWrapperRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/security/SecurityUtilsUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/security/jwt/JWTFilterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/security/jwt/TokenProviderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/web/rest/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/web/rest/errors/ExceptionTranslatorIT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/sklepagd/web/rest/errors/ExceptionTranslatorTestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/resources/config/application-testcontainers.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/resources/config/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/resources/config/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/java/com/backendsklepagd/config/CacheConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/.h2.server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/.h2.server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/resources/config/liquibase/master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/entity.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/entities/entity.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/BackendSklepAGD/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BackendSklepAGD" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -43,32 +413,27 @@
     </option>
   </component>
   <component name="ProjectId" id="1mqPJt7ar9pBPG6JWIfo6pI2tdK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA U 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="E2E Tests (SklepImpl)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -99,7 +464,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610218078967</updated>
-      <workItem from="1610218080251" duration="619000" />
+      <workItem from="1610218080251" duration="2585000" />
+      <workItem from="1610220775263" duration="126000" />
+      <workItem from="1610230795307" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="Bla BLa">
       <created>1610218140615</created>
@@ -115,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610218428328</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#2 Divide Project 2 folders Front and Back">
+      <created>1610218729620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610218729620</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,17 +517,36 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bla BLa" />
     <MESSAGE value="Divide Project 2 folders Front and Back" />
-    <option name="LAST_COMMIT_MESSAGE" value="Divide Project 2 folders Front and Back" />
+    <MESSAGE value="#2 Divide Project 2 folders Front and Back" />
+    <MESSAGE value="Adding backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding backend" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610218442700">
+    <state x="223" y="67" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610219855843">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610218442700" />
+    <state x="223" y="67" width="1089" height="737" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1610219855843" />
+    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610219339503">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1610219339503" />
+    <state x="498" y="226" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610219853740">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="226" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1610219853740" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610220899194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610220899194" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610218736388">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610218736388" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610218248382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
