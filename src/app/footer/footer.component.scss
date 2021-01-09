@@ -1,4 +1,7 @@
 .styling-footer{
+    position: relative;
+    bottom: 0%;
+    margin-top: 100px;
     display: flex;
     height: 12vh;
     background-color: rgb(88, 88, 88);
@@ -6,5 +9,5 @@
     white-space: pre-wrap;
     align-items: center;
     justify-content: space-around;
-    vertical-align: bottom;
+    
 }
