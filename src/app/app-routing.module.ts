@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowseProductsComponent } from './browse-products/browse-products.component';
+import { ComplaintComponent } from './complaint/complaint.component';
 import { SubmitOrderComponent } from './submit-order/submit-order.component';
 
 const routes: Routes = [
 {path: 'offer', component: BrowseProductsComponent},
-{path: "basket", component: SubmitOrderComponent}
+{path: "basket", component: SubmitOrderComponent},
+{path: "complaint", component: ComplaintComponent}
 ];
 
 @NgModule({

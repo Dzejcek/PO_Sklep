@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ComplaintService } from './complaint/complaint.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SklepImpl';
+  constructor(private loginService: ComplaintService) {}
+  ngOnInit() {
+    this.loginService.loginUser();
+  }
 }

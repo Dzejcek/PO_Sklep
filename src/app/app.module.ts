@@ -7,7 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BasketComponent } from './basket/basket.component';
@@ -23,6 +23,9 @@ import { SubmitOrderComponent } from './submit-order/submit-order.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
+import { ComplaintComponent } from './complaint/complaint.component';
+import { TokenInterceptorService } from './logging/token-interceptor.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import { FooterComponent } from './footer/footer.component';
     BasketComponent,
     BrowseProductsComponent,
     SubmitOrderComponent,
-    FooterComponent
+    FooterComponent,
+    ComplaintComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +57,13 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule
 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass:TokenInterceptorService,
+      multi: true
+    }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
