@@ -33,3 +33,6 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+<div  style="width: 80%; margin-left: 10%; margin-right: 10%; background-color: white; margin-top: 20px;">
+  <button mat-raised-button  matStepperNext color="primary" (click)="zlozZamowienie()" style="float: right;" [disabled]="dataSource.data.length == 0">Złóż zamówienie</button> 
+</div>

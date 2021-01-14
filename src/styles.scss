@@ -27,3 +27,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ::ng-deep.mat-form-field-underline {
     background-color:  rgb(255, 230, 0) !important;
 }
+
+mat-step-header{
+    pointer-events: none !important; 
+}

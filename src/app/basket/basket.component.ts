@@ -37,5 +37,10 @@ export class BasketComponent implements OnInit {
     let updateUrl = `http://localhost:8080/api/produkt-koszyks/changeIlosc/${prodID}/${ilosc}`;
     this.http.put(updateUrl, null).subscribe();
   }
+
+  zlozZamowienie() {
+    let putUrl = "http://localhost:8080/api/zamowienies/new";
+    this.http.post(putUrl, null).subscribe();
+  }
 }
 

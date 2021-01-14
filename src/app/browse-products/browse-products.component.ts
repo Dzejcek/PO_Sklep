@@ -27,6 +27,8 @@ export class BrowseProductsComponent implements OnInit  {
         this.dataSource.data = products; 
         this.dataSource.paginator = this.paginator; 
         this.categoryName = this.route.snapshot.paramMap.get('cat'); 
+        console.log(this.categoryName)
+        console.log(this.dataSource.data)
        }
       )
     );
