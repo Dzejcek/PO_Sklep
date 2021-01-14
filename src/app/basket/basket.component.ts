@@ -1,29 +1,41 @@
-import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { Product } from '../objects/Product';
-const  productList: Array<Object> = [{title: "TV 1500", price: 1000}, {title: "TV 1700", price: 1500}];
+
 @Component({
   selector: 'app-basket',
   templateUrl: './basket.component.html',
   styleUrls: ['./basket.component.scss']
 })
 export class BasketComponent implements OnInit {
+
+
+  constructor(private _formBuilder: FormBuilder, private http: HttpClient) {}
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   displayedColumns = ['title', 'price'];
-  dataSource = productList;
- 
-  isLinear = false;
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
-
-  constructor(private _formBuilder: FormBuilder) {}
-
+  dataSource: MatTableDataSource<Product>;
+  categoryName = '';
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
-    });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
+    this.dataSource = new MatTableDataSource();
+    this.getProd();
+  }
+
+  getProd() {
+    this.http.get('http://localhost:8080/api/produkts/inkoszyk').subscribe(productListDounloaded =>{this.dataSource.data = productListDounloaded as Product[]; console.log(this.dataSource.data) })
+    
+  }
+
+  getImgPath(productId): string {
+    return `assets/img/${productId}.jpg`;
+  }
+
+  updateIlosc(prodID, ilosc) {
+    ilosc = ilosc.target.value;
+    let updateUrl = `http://localhost:8080/api/produkt-koszyks/changeIlosc/${prodID}/${ilosc}`;
+    this.http.put(updateUrl, null).subscribe();
   }
 }
 

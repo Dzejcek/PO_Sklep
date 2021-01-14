@@ -5,7 +5,8 @@ import { ComplaintComponent } from './complaint/complaint.component';
 import { SubmitOrderComponent } from './submit-order/submit-order.component';
 
 const routes: Routes = [
-{path: 'offer', component: BrowseProductsComponent},
+{ path: '', redirectTo: '/offer', pathMatch: 'full' },
+{path: 'offer/:cat', component: BrowseProductsComponent},
 {path: "basket", component: SubmitOrderComponent},
 {path: "complaint", component: ComplaintComponent}
 ];
