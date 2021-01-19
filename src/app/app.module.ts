@@ -26,6 +26,10 @@ import { FooterComponent } from './footer/footer.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { TokenInterceptorService } from './logging/token-interceptor.service';
 import {MatSortModule} from '@angular/material/sort';
+import { PodsumowanieComponent } from './podsumowanie/podsumowanie.component';
+import { SposobdostawyComponent } from './sposobdostawy/sposobdostawy.component';
+import { PlatnoscComponent } from './platnosc/platnosc.component';
+import { DanewysylkiComponent } from './danewysylki/danewysylki.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +39,13 @@ import {MatSortModule} from '@angular/material/sort';
     BrowseProductsComponent,
     SubmitOrderComponent,
     FooterComponent,
-    ComplaintComponent
+    ComplaintComponent,
+    PodsumowanieComponent,
+    SposobdostawyComponent,
+    PlatnoscComponent,
+    DanewysylkiComponent,
+
+    
   ],
   imports: [
     BrowserModule,

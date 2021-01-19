@@ -15,7 +15,7 @@ const splitChar = '+';
 
 export class BrowseProductsComponent implements OnInit  {
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  displayedColumns = ['title', 'price'];
+  displayedColumns = ['nazwa', 'cena'];
   dataSource: MatTableDataSource<Product>;
   categoryName = '';
   @ViewChild(MatSort) sort: MatSort;

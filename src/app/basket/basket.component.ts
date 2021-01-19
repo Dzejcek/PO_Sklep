@@ -62,7 +62,12 @@ export class BasketComponent implements OnInit {
     let deleteUrl = `http://localhost:8080/api/produkt-koszyks/${idPassed}`;
     this.http.delete(deleteUrl).subscribe();
     this.dataSource.data = this.dataSource.data.filter(prod => prod.id != idPassed)
+    this.computeBasketValue()
     
+  }
+
+  sort() {
+    this.dataSource.data.sort()
   }
 }
 

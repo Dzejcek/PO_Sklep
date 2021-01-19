@@ -8,8 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class SubmitOrderComponent implements OnInit {
 
   constructor() { }
-
+  cantNext
+  cantNext2
+  cantNext3
   ngOnInit(): void {
+  }
+  bind(isValid){
+    console.log(isValid)
+    this.cantNext=isValid
+  }
+
+  bind2(isValid){
+    this.cantNext2=isValid
+  }
+  bind3(isValid){
+    this.cantNext3=isValid
   }
 
 }

@@ -1,18 +1,22 @@
-<mat-horizontal-stepper  #stepper style="background-color: #363434; color: white;" linear = "true"> 
+<mat-horizontal-stepper  linear="true" #stepper style="background-color: #363434; color: white;"> 
     <mat-step >
         <ng-template matStepLabel style="pointer-events: none;">Zawartość koszyka</ng-template>
         <app-basket></app-basket>
     </mat-step>
-    <mat-step>
-        <ng-template matStepLabel>Płatność</ng-template>
-    </mat-step>
-    <mat-step>
+    <mat-step [completed]="cantNext">
         <ng-template matStepLabel>Twoje dane</ng-template>
+        <app-danewysylki (goNext)="bind($event)"></app-danewysylki>
     </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Dostawa</ng-template>
+    <mat-step [completed]="cantNext2">
+        <ng-template matStepLabel>Dostawa</ng-template>
+        <app-sposobdostawy (goNext2)="bind2($event)"></app-sposobdostawy>
+    </mat-step>
+    <mat-step [completed]="cantNext3">
+      <ng-template matStepLabel>Płatność</ng-template>
+      <app-platnosc (goNext3)="bind3($event)"></app-platnosc>
     </mat-step>
     <mat-step>
         <ng-template matStepLabel>Podsumowanie</ng-template>
+        <app-podsumowanie></app-podsumowanie>
       </mat-step>
   </mat-horizontal-stepper>

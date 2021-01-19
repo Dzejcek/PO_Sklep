@@ -1,28 +1,21 @@
 <div  class="mat-app-background" style="width: 80%; margin-left: 10%; margin-right: 10%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 5%;" >
-<h1>Modyfikacja produktu </h1>
-    <mat-form-field class="example-form-field" style=" width: 60%;" >
-    <mat-label>Clearable input</mat-label>
-    <input matInput type="text">
-    <button mat-button >
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-form-field>
-  <mat-form-field class="example-form-field" style=" width: 60%;" >
-    <mat-label>Clearable input</mat-label>
-    <input matInput type="text">
-    <button mat-button >
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-form-field>
-  <mat-form-field class="example-form-field" style=" width: 60%;" >
-    <mat-label>Clearable input</mat-label>
-    <input matInput type="text">
-    <button mat-button >
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-form-field>
+<h1>Formularz składania reklamacji </h1>
 
-  <button mat-button   (click)="getProd()">
-   Get prod
+<div [formGroup]="profileForm" style=" width: 80%;">
+    <mat-form-field class="example-form-field" style=" width: 60%;" >
+    <mat-label>Wprowadź numer zamówienia</mat-label>
+    <input matInput type="text" formControlName="zamowienieId">
+    <button mat-button >
+    </button>
+  </mat-form-field>
+  <mat-form-field class="example-form-field" style=" width: 60%;" >
+    <mat-label>Podaj przyczynę składania reklamacji</mat-label>
+    <input matInput type="text" formControlName="opis">
+    <button mat-button >
+    </button>
+  </mat-form-field>
+</div>
+  <button mat-button  style="background-color: green;" (click)="postReklamacja()" routerLink = "/offer/lodowki">
+   Złóż reklamację
   </button>
 </div>
