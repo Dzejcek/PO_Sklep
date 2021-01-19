@@ -8,8 +8,6 @@ export class TokenInterceptorService {
   constructor(private http: HttpClient) { }
 
   intercept(req, next) {   
-    
-    console.log(this.getToken())
       let tokenizedReq = req.clone({
         setHeaders : {
           Authorization: 'Bearer ' + this.getToken()

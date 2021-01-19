@@ -2,37 +2,69 @@
 <table *ngIf="dataSource.data.length > 0" mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="width: 80%; margin-left: 10%; margin-right: 10%; background-color: white;">
 
   <ng-container matColumnDef="title" >
-    <th mat-header-cell *matHeaderCellDef class="tableHeader" style="width: 70%;"> Name </th>
+    <th mat-header-cell *matHeaderCellDef class="tableHeader"> Nazwa </th>
     <td mat-cell *matCellDef="let product" >
-      <div style="display: flex;">  
-      <img [src]="getImgPath(product.id)" width="250" height="200" style="display: inline;"> 
-      <span style="vertical-align: text-top;">
-       {{product.opis}}
-      </span> 
+      <div style="display: flex; text-align: center; justify-content: center;">  
+      <img [src]="getImgPath(product.id)" width="200" height="150" style="display: inline;"> 
+      <p style="vertical-align: middle; font-size: 30px; width: 100%;">
+       {{product.nazwa}}
+      </p> 
     </div>
     </td>
   </ng-container>
 
-  <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef class="tableHeader"> Price </th>
-    <td mat-cell *matCellDef="let product"> 
-      <div>
-      <label style="font-weight: 500; ">Całkowita cena </label>
-      <span> {{product.cena}} </span> 
-    </div>
-    <div style="display: flex;">
-      <label style="font-weight: 500; ">Liczba produktów</label>
+  <ng-container matColumnDef="liczba" >
+    <th mat-header-cell *matHeaderCellDef class="tableHeader"> Liczba </th>
+    <td mat-cell *matCellDef="let product" >
+      <div  style="justify-content: center; align-items: center; display: flex;">
       <mat-form-filed>
-      <input id="ilosc" matInput value="{{product.ilosc}}" type="number" min="1" style="width: 40px; background-color: darkgray; border: 1px solid black; margin-left: 40px;" (focusout)="updateIlosc(product.id, $event)"> 
-    </mat-form-filed>
-  
-  </div>
+        <input id="ilosc" matInput value="{{product.ilosc}}" type="number" min="1" style=" background-color: darkgray; height: 40px; text-align: center;" (focusout)="updateIlosc(product.id, $event)"> 
+      </mat-form-filed>
+    </div>
     </td>
   </ng-container>
+
+  <ng-container matColumnDef="price" >
+    <th mat-header-cell *matHeaderCellDef class="tableHeader"> Cena </th>
+    <td mat-cell *matCellDef="let product" >
+      <div>
+        <span style="font-size: x-large;">Cena: {{product.cena}} </span> 
+      </div>
+      
+    </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="sum">
+    <th mat-header-cell *matHeaderCellDef class="tableHeader"> Suma </th>
+    <td mat-cell *matCellDef="let product"> 
+      <div>
+      <span style="font-size: x-large;"> Całkowita suma: {{product.cena * product.ilosc}} </span> 
+    </div>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete" >
+    <th mat-header-cell *matHeaderCellDef class="tableHeader"> Usuń </th>
+    <td mat-cell *matCellDef="let product" >
+      <span class="material-icons" style="cursor: pointer;" (click)="delete(product.id)">
+        delete
+        </span>
+    </td>
+  </ng-container>
+
+
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
+<mat-card>
+<div style="width: 80%; margin-left: 10%; margin-right: 10%; background-color: white; margin-top: 20px; ">
+
+  <p style="font-size: larger; color: rgb(212, 26, 26); text-align: end;">Wszystko razem : {{basketSum}}</p>
+
+</div>
+</mat-card>
 <div  style="width: 80%; margin-left: 10%; margin-right: 10%; background-color: white; margin-top: 20px;">
-  <button mat-raised-button  matStepperNext color="primary" (click)="zlozZamowienie()" style="float: right;" [disabled]="dataSource.data.length == 0">Złóż zamówienie</button> 
+  <button mat-raised-button matStepperNext color="primary" (click)="zlozZamowienie()" style="float: right;" [disabled]="dataSource.data.length == 0" >Złóż zamówienie</button> 
 </div>

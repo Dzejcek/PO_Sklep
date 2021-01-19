@@ -25,6 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { TokenInterceptorService } from './logging/token-interceptor.service';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { TokenInterceptorService } from './logging/token-interceptor.service';
     FormsModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSortModule
 
   ],
   providers: [

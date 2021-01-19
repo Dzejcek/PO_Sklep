@@ -1,10 +1,12 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../objects/Product';
 import { BrowseProductsService } from './browse-products.service';
 
+const splitChar = '+';
 @Component({
   selector: 'app-browse-products',
   templateUrl: './browse-products.component.html',
@@ -16,7 +18,9 @@ export class BrowseProductsComponent implements OnInit  {
   displayedColumns = ['title', 'price'];
   dataSource: MatTableDataSource<Product>;
   categoryName = '';
- 
+  @ViewChild(MatSort) sort: MatSort;
+
+
   constructor(private route: ActivatedRoute, private productsService: BrowseProductsService) { }
   
   ngOnInit(): void {
@@ -27,12 +31,16 @@ export class BrowseProductsComponent implements OnInit  {
         this.dataSource.data = products; 
         this.dataSource.paginator = this.paginator; 
         this.categoryName = this.route.snapshot.paramMap.get('cat'); 
-        console.log(this.categoryName)
-        console.log(this.dataSource.data)
        }
       )
     );
   }
+
+  ngAfterViewInit() {
+    this.dataSource.sort = this.sort;
+    console.log(this.sort)
+  }
+
 
   getImgPath(productId): string {
     return `assets/img/${productId}.jpg`;
@@ -41,5 +49,16 @@ export class BrowseProductsComponent implements OnInit  {
   addToBasket(productId){
     this.productsService.addToBasket(productId);
   }
+
+  getColor(dostepny){
+    if(dostepny === 'tak')
+      return 'red';
+    return 'green';
+  }
+
+  splitDesription(desc: string){
+    return desc.split(splitChar);
+  }
+
 
 }
